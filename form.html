@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Do we need a parking in the center of Lviv?</h1>
+    </header>
+    <nav>
+        <p><strong>Leave this page and go back to the previous <a href = "index.html">click here.</a></strong></p>
+    </nav>
+    <article>
+        <form method = "POST" action = "https://formspree.io/romanivna.199627@gmail.com">
+        <h3>Lets start!</h3>
+        <fieldset>
+            <label>Your name:
+                <input type="text" name="name" required>
+            </label>
+            <label>Your surname:
+                <input type="text" name="surname" required>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <label>If you want to get the results write your email:
+                <input type="email" name="c-email">
+            </label>
+        </fieldset>
+        <fieldset><p>What is your sex?</p>
+            <label>
+            <select name="dropdown">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>How old are you?</p>
+            <label>
+                <input type="radio" name="age" required>till 18
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="age" required>19-30
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="age" required>30-50
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="age" required>after 50
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Do you use the car to get to the center of city?</p>
+            <label>
+                <input type="radio" name="get-to-center" required>Yes!
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="get-to-center" required>No, i use a bus or tram.
+            </label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <p>How often do you use the car to get to the center of Lviv?</p>
+            <label>
+                <input type="radio" name="use-car" required>Every day
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="use-car" required>Two-three times a week
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="use-car" required>Only at the weekend
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="use-car" required>I use a bus or tram. 
+            </label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <p>Where do you leave your car in the center of the city?</p>
+            <label>
+                <input type="checkbox" name="leave-car">Leave somewhere on the sidewalk
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="leave-car">10-15 min from the center
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="leave-car">Usually I come by foot
+            </label>
+            <br>
+            <label>Your option:
+               <textarea name = "comment"></textarea>
+           </label>
+        </fieldset>
+        <fieldset><p>Do we need a parking in the center of Lviv?</p>
+            <label>
+                <input type="radio" name="need-parking" required>Yes, because there are a lot of cars on the sidewalk
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="need-parking" required>No, it can spoil the city's architecture
+            </label>
+            <br>
+            <label>Your option:
+               <textarea name = "comment"></textarea>
+           </label>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+        </form> 
+    </article>
+    <footer>
+       <p><a href = "index.html">Previous page</a></p>
+    </footer>
+</body>
+</html>
